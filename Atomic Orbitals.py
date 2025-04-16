@@ -6,6 +6,19 @@
 
 import sys
 
+import numpy as np
+from skimage import measure
+import plotly.graph_objects as go
+from scipy import integrate
+from stl import mesh
+
+import os
+
+# Replace with your desired directory
+# directory = "C:\\Users\\vince\\OneDrive - Triton College\\Research\\Quantum\\H orbitals\\STLs\\Hydrogen"
+# directory = "C:\\Users\\vincenthradil\\OneDrive - Triton College\\Research\\Quantum\\H orbitals\\STLs\\Hydrogen"
+directory = "STLs"
+
 if __name__ == "__main__":
     if len(sys.argv) == 4:
         try:
@@ -69,18 +82,6 @@ if __name__ == "__main__":
         print("P 1s 14.56; 2s 9.83; 2p 10.96; 3s 5.64; 3p 4.89")
         print("Br 1s 35.00; 2s 34.25; 2p 31.06; 3s 20.22; 3p 19.57; 4s 10.55; 3d 19.56; 4p 9.03")
         sys.exit(1)
-
-import numpy as np
-from skimage import measure
-import plotly.graph_objects as go
-from scipy import integrate
-from stl import mesh
-
-import os
-
-# Replace with your desired directory
-directory = "C:\\Users\\vince\\OneDrive - Triton College\\Research\\Quantum\\H orbitals\\STLs\\Hydrogen"
-# directory = "C:\\Users\\vincenthradil\\OneDrive - Triton College\\Research\\Quantum\\H orbitals\\STLs\\Hydrogen"
 
 # Effective charge
 # H 1s 1.00
