@@ -74,7 +74,7 @@ if __name__ == "__main__":
             sys.exit(1)
         
     else:
-        print("Usage: python Atomic-Orbitals.py <psicode> <zeff> <fprefix> [<stl_factor (3)>] [<grid_size> (200)]")
+        print("Usage: python h_orbitals_v3.py <psicode> <zeff> <fprefix> [<stl_factor (3)>] [<grid_size> (200)]")
         print("")
         print("Zeff:")
         print("H 1s 1.00")
